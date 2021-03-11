@@ -17,8 +17,8 @@ function loadMainPrompts() {
   prompt([
     {
       type: "list",
-      name: "choice",
-      message: "What would you like to do?",
+      name: "select",
+      message: "chose action?",
       choices: [
         {
           name: "View All Employees",
