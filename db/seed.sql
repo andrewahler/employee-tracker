@@ -11,7 +11,7 @@ INSERT INTO role
     (title, salary, department_id)
 VALUES
     ('Sales Manager', 60000, 1),
-    ('Salesperson', 22000, 1),
+    ('Sales representative', 22000, 1),
     ('HR Manager', 100000, 2),
     ('HR', 65000, 2),
     ('Production Manager', 100000, 3),
