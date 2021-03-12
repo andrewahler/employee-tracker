@@ -6,7 +6,7 @@ require("console.table");
 init();
 
 function init() {
-  const logoText = logo({ name: "Employee Manager" }).render();
+  const logoText = logo({ name: "Employee Tracker" }).render();
 
   console.log(logoText);
 
@@ -200,7 +200,7 @@ function viewEmployeesByManager() {
   });
 }
 
-// Delete an employee
+
 function removeEmployee() {
   db.findAllEmployees().then(([rows]) => {
     let employees = rows;
