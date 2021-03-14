@@ -5,6 +5,9 @@ class DB {
     this.connection = connection;
   }
 
+  conncectionEstablished(){
+    // console.log("Connection", this.connection)
+  }
   findAllEmployees() {
     return this.connection
       .promise()

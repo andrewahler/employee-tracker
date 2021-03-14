@@ -3,18 +3,19 @@ const logo = require("asciiart-logo");
 const db = require("./db");
 require("console.table");
 
+console.log("DB",db)
 init();
 
-function init() {
+async function init() {
   const logoText = logo({ name: "Employee Tracker" }).render();
 
   console.log(logoText);
 
-  loadMainPrompts();
+  await loadMainPrompts();
 }
 
-function loadMainPrompts() {
-  prompt([
+async function loadMainPrompts() {
+  await prompt([
     {
       type: "list",
       name: "select",
@@ -70,6 +71,7 @@ function loadMainPrompts() {
     },
   ]).then((res) => {
     let choice = res.choice;
+    console.log("User Choice",res)
 
     switch (choice) {
       case "VIEW_EMPLOYEES":
